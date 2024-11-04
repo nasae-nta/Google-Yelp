@@ -1,0 +1,6 @@
+# En los directorios data/raw/google_maps y data/raw/yelp hay una carpeta org con los datasets originales. Esas carpetas no se subirán pero, a los datasets en ellas se les realizará un proceso de conversión a Parquet para trabajar con ellos.
+
+#carpetas a omitir
+
+org/
+venv/
