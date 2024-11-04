@@ -148,6 +148,15 @@ Datos extraídos de la plataforma de reseñas **Yelp** y de **Google Maps**, par
 
 ### KPIs
 
+primer KPI : Tendencia de satisfacción en periodos de tiempo:
+
+Este KPI trata de ver la evolución de la satisfacción del cliente durante periodos de tiempo
+
+En caso de usar meses como periodo la formula seria (Satisfacción promedio del mes actual - el mes anterior % el promedio del mes anterior multiplicado x 100)
+
+El objetivo seria identificar si la calidad de mi servicio mejora o empeora con el tiempo y tomar medias necesarias
+
+
 <h2 align='center' id='colab'>Contribución y Colaboración</h2>
 
 <p align='center'>¿Te gustaría aportar algo al proyecto, darnos una opinión, colaborar con nosotros o proponernos algo?<br><b>¡Contáctanos!</b> Nos encantaría conocer tu opinión:</p>
