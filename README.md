@@ -67,11 +67,8 @@ Este proyecto está orientado al análisis de reseñas de usuarios en las plataf
 
 Nuestro enfoque se centra en el rubro gastronómico en general (restaurantes, bares, cafeterías, etc.) en Tampa, Florida debido a su alto PBI per cápita y su alcance turístico. Sin embargo, el análisis y modelo podrían aplicarse en un futuro a otros tipos de comercios, otros estados o ampliarse a nivel internacional.
 
-<<<<<<< Updated upstream
-Nuestro objetivo es la recopilación, procesamiento y análisis de datos en los cinco estados con mayor PBI total de los Estados Unidos, con el propósito de comprender las opiniones de los usuarios, anticipar tendencias de crecimiento o declive en el sector de restaurantes, seleccionar ubicaciones estratégicas y desarrollar un sistema de recomendación personalizado para los usuarios.
-=======
 Nuestro objetivo es la recopilación, procesamiento y análisis de datos en la ciudad antes mencionada, con el propósito de comprender las opiniones de los usuarios, anticipar tendencias de crecimiento o declive en el sector gastronómico, seleccionar ubicaciones estratégicas y desarrollar un sistema de recomendación personalizado para los usuarios.
->>>>>>> Stashed changes
+
 
 <h2 align='center' id='requirements'>Instalación y Requisitos</h2>
 
@@ -153,8 +150,7 @@ Datos extraídos de la plataforma de reseñas **Yelp** y de **Google Maps**, par
 
 ### KPIs
 
-<<<<<<< Updated upstream
-=======
+
 #### Tendencia de satisfacción en periodos de tiempo:
 
 Este KPI trata de ver la evolución de la satisfacción del cliente durante periodos de tiempo.
@@ -174,7 +170,6 @@ Definiendo a las reseñas positivas y negativas como:
 [(suma de reseñas del trimestre actual / suma de reseñas del trimestre anterior) / suma de reseñas del trimestre anterior] * 100
 
 
->>>>>>> Stashed changes
 <h2 align='center' id='colab'>Contribución y Colaboración</h2>
 
 <p align='center'>¿Te gustaría aportar algo al proyecto, darnos una opinión, colaborar con nosotros o proponernos algo?<br><b>¡Contáctanos!</b> Nos encantaría conocer tu opinión:</p>
@@ -226,8 +221,5 @@ Definiendo a las reseñas positivas y negativas como:
 <p align='center'><b>Santino Rocchietti</b></p>
 <p align='center'><b>Esteban Nivia</b></p>
 <p align='center'><b>Artiom Diakov</b></p>
-<<<<<<< Updated upstream
 <p align='center'><b>Agostina Fernández</b></p>
-=======
-<p align='center'><b>Agostina Fernández</b></p>
->>>>>>> Stashed changes
+
