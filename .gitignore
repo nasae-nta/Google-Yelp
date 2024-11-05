@@ -4,6 +4,4 @@
 
 org/
 venv/
-review.parquet
-user.parquet
-*.json
+
