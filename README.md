@@ -6,9 +6,9 @@
 <p align="center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Yelp_Logo.svg/2560px-Yelp_Logo.svg.png"  height="200">
 
-<h1 align='center'>Sistema de Recomendación de Restaurantes en NY, California y Florida</h1>
+<h1 align='center'>Sistema de Recomendación de Locales Gastronómicos en Tampa, Florida</h1>
 
-Este proyecto está orientado al análisis de reseñas de usuarios en las plataformas Yelp y Google Maps, centrado en el sector de restaurantes en Nueva York, Florida y California. A través de técnicas avanzadas de análisis de sentimientos y Machine Learning, buscamos generar un entendimiento profundo de las opiniones de los usuarios, lo cual permitirá a nuestro cliente —un conglomerado de empresas de turismo— tomar decisiones basadas en datos para estrategias de expansión, marketing, y servicio al cliente.
+Este proyecto está orientado al análisis de reseñas de usuarios en las plataformas Yelp y Google Maps, centrado en el sector de gastronomía en Tampa, Florida. A través de técnicas avanzadas de análisis de sentimientos y Machine Learning, buscamos generar un entendimiento profundo de las opiniones de los usuarios, lo cual permitirá a nuestro cliente —un conglomerado de empresas de turismo— tomar decisiones basadas en datos para estrategias de expansión, marketing, y servicio al cliente.
 
 ### Tabla de contenido
 
@@ -26,10 +26,10 @@ Este proyecto está orientado al análisis de reseñas de usuarios en las plataf
 <h2 align='center' id='objetivos'>Objetivos del Proyecto</h2>
 
 
-1. **Analizar las opiniones de usuarios** de Yelp y Google Maps para identificar tendencias en la percepción de restaurantes.
+1. **Analizar las opiniones de usuarios** de Yelp y Google Maps para identificar tendencias en la percepción de locales gastronómicos.
 
 
-2. **Realizar un análisis de sentimientos** para identificar aspectos positivos y negativos en reseñas de los restaurantes.
+2. **Realizar un análisis de sentimientos** para identificar aspectos positivos y negativos en reseñas de los locales gastronómicos.
 
 
 3. **Desarrollar un sistema de recomendación** para ayudar a los usuarios a descubrir nuevos lugares de acuerdo con sus experiencias previas.
@@ -65,9 +65,13 @@ Este proyecto está orientado al análisis de reseñas de usuarios en las plataf
 
 <h2 align='center'>Alcance</h2>
 
-Nuestro enfoque se centra en el rubro de restaurantes en Nueva York, California y Florida debido a su alto PBI per cápita y su alcance turístico. Sin embargo, el análisis y modelo podrían aplicarse en un futuro a otros tipos de comercios, otros estados o ampliarse a nivel internacional.
+Nuestro enfoque se centra en el rubro gastronómico en general (restaurantes, bares, cafeterías, etc.) en Tampa, Florida debido a su alto PBI per cápita y su alcance turístico. Sin embargo, el análisis y modelo podrían aplicarse en un futuro a otros tipos de comercios, otros estados o ampliarse a nivel internacional.
 
+<<<<<<< Updated upstream
 Nuestro objetivo es la recopilación, procesamiento y análisis de datos en los cinco estados con mayor PBI total de los Estados Unidos, con el propósito de comprender las opiniones de los usuarios, anticipar tendencias de crecimiento o declive en el sector de restaurantes, seleccionar ubicaciones estratégicas y desarrollar un sistema de recomendación personalizado para los usuarios.
+=======
+Nuestro objetivo es la recopilación, procesamiento y análisis de datos en la ciudad antes mencionada, con el propósito de comprender las opiniones de los usuarios, anticipar tendencias de crecimiento o declive en el sector gastronómico, seleccionar ubicaciones estratégicas y desarrollar un sistema de recomendación personalizado para los usuarios.
+>>>>>>> Stashed changes
 
 <h2 align='center' id='requirements'>Instalación y Requisitos</h2>
 
@@ -78,8 +82,7 @@ Nuestro objetivo es la recopilación, procesamiento y análisis de datos en los 
 - Pandas.
 - Matplotlib.
 - Scikit-Learn.
-- FastApi.
-- Ubicorn.
+- NLTK.
 - Power BI.
 
 ### Pasos de Instalación:
@@ -98,7 +101,6 @@ Nuestro objetivo es la recopilación, procesamiento y análisis de datos en los 
 - 📁 **data/**
     - **raw/:** Datos crudos descargados
     - **processed/:** Datos procesados y listos para análisis
-    - **external/:** Fuentes de datos adicionales (externas)
 - 📁 **notebooks/:** Jupyter Notebooks para exploración de datos y desarrollo del modelo
 - 📁 **src/**
     - **data/:** Scripts de procesamiento y limpieza de datos
@@ -133,21 +135,46 @@ Datos extraídos de la plataforma de reseñas **Yelp** y de **Google Maps**, par
 
 <h2 align='center' id='stack'>Stack Tecnológico</h2>
 
-- **Visual Studio Code:** Software para trabajar de forma local en el proyecto
-- **Git:** Sistema de control de versiones distribuido, para el seguimiento de cambios en el código fuente.
-- **Github:** Alojamiento de nuestro repositorio.
-- **Python:** Para el procesamiento de datos.
-- **Pandas y Numpy:** Manipulación de datos.
-- **NLTK y SpaCy:** Análisis de lenguaje natural.
-- **Scikit-Learn:** Modelado de Machine Learning.
-- **SQL:** Almacenamiento y consulta de datos.
-- **Matplotlib y Seaborn:** Visualización de datos.
-- **PowerBI:** Visualización interactiva de datos.
+- **Git:** Sistema de control de versiones distribuido.
+- **GitHub:** Alojamiento del repositorio compartido.
+- **Visual Studio Code:** Software para desarrollo local del servicio.
+- **Python:** Lenguaje de programación.
+- **Librerías:**
+    - **Pandas:** Manipulación y procesamiento de datos.
+    - **Matplotlib y Seaborn:** Visualización y análisis estático de datos.
+    - **NLTK:** Procesamiento de lenguaje natural y análisis de sentimientos.
+    - **Scikit-Learn:** Entrenamiento del modelo de Machine Learning.
+- **Power BI:** Análisis interactivo de datos y desarrollo de Dashboard.
+- **MySQL:** Sistema de gestión de bases de datos relacional.
+- **SQL:** Lenguaje para interacción con base de datos.
+- **AWS:** Almacenamiento en cloud de los datos y deploy del proyecto.
 
 <h2 align='center' id='result'>Resultados y Conclusiones</h2>
 
 ### KPIs
 
+<<<<<<< Updated upstream
+=======
+#### Tendencia de satisfacción en periodos de tiempo:
+
+Este KPI trata de ver la evolución de la satisfacción del cliente durante periodos de tiempo.
+
+En caso de usar meses como periodo la formula seria (Satisfacción promedio del mes actual - el mes anterior % el promedio del mes anterior multiplicado x 100)
+
+El objetivo seria identificar si la calidad del servicio mejora o empeora con el tiempo y tomar medias necesarias.
+
+#### Tasa de Crecimiento de Reseñas Positivas y Negativas Trimestral:
+
+Identifica la tendencia del rubro a mejorar o empeorar.
+
+Definiendo a las reseñas positivas y negativas como:
+- **Reseñas positivas:** Aquellas con un rating de 4 o 5 estrellas.
+- **Reseñas negativas:** Aquellas con un rating de 1 o 2 estrellas.
+
+[(suma de reseñas del trimestre actual / suma de reseñas del trimestre anterior) / suma de reseñas del trimestre anterior] * 100
+
+
+>>>>>>> Stashed changes
 <h2 align='center' id='colab'>Contribución y Colaboración</h2>
 
 <p align='center'>¿Te gustaría aportar algo al proyecto, darnos una opinión, colaborar con nosotros o proponernos algo?<br><b>¡Contáctanos!</b> Nos encantaría conocer tu opinión:</p>
@@ -199,4 +226,8 @@ Datos extraídos de la plataforma de reseñas **Yelp** y de **Google Maps**, par
 <p align='center'><b>Santino Rocchietti</b></p>
 <p align='center'><b>Esteban Nivia</b></p>
 <p align='center'><b>Artiom Diakov</b></p>
+<<<<<<< Updated upstream
 <p align='center'><b>Agostina Fernández</b></p>
+=======
+<p align='center'><b>Agostina Fernández</b></p>
+>>>>>>> Stashed changes
