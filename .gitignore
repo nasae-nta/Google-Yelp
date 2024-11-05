@@ -4,6 +4,6 @@
 
 org/
 venv/
-
-raw/yelp/reviews.parquet
-raw/yelp/user.parquet
+review.parquet
+user.parquet
+*.json
