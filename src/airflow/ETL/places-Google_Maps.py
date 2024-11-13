@@ -120,7 +120,7 @@ def ETL(file_path, services, cols_to_delete, coor, filter_col):
         # se verifica si existen coordenadas, si el valor es None, no se filtra ninguna
         if coor is not None:
             # se filtran las filas de df que no tengan coordenadas
-            df = filter_ubication(df, 'address', 'Tampa')
+            df = filter_ubication(df, coor[0], coor[1])
             print(f"Filtrado en {file_path} completado exitosamente con {len(df)} registros.")
 
         # si existe la columna state, se filtran los elementos que no estén permanentemente cerrados
@@ -146,6 +146,8 @@ def ETL(file_path, services, cols_to_delete, coor, filter_col):
         print(f"Error al leer {file_path}: {e}")
         return None
 
+######################################### MAIN #########################################
+
 def __main__():
     # se guarda el directorio con los datasets en una variable
     data_dir = os.path.join(project_root, 'data/raw/google_maps/metadata-sitios')
@@ -158,10 +160,10 @@ def __main__():
     filter_col = 'category'
 
     #Se definen las columnas a eliminar (None para no filtrar)
-    cols_to_delete = ['description', 'hours', 'state', 'relative_results', 'MISC', 'url', 'price']
+    cols_to_delete = ['description', 'hours', 'state', 'relative_results', 'MISC', 'url']
 
-    # Se definen las coordenadas de Tampa para filtrar en formato [[lat1, lat2], [long1, long2]]. None para no filtrar por coordenadas
-    coor = [[27.8, 28.2], [-82.7, -82.3]]
+    # Se definen las coordenadas de Tampa para filtrar en formato [columna, ciudad]. None para no filtrar por coordenadas
+    coor = ['address', 'Tampa']
 
     counter = 0
 
