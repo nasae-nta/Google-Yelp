@@ -10,10 +10,6 @@
 <p align="center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Yelp_Logo.svg/2560px-Yelp_Logo.svg.png" height="200">
 
-<h2 align='center' id='objetivos'>Objetivos del Proyecto</h2>
-
-Este proyecto está orientado al análisis de reseñas de usuarios en las plataformas Yelp y Google Maps, centrado en el sector gastronómico en Tampa, Florida. A través de técnicas avanzadas de análisis de sentimientos y Machine Learning, buscamos generar un entendimiento profundo de las opiniones de los usuarios, lo cual permitirá a nuestro cliente —un conglomerado de empresas de turismo— tomar decisiones basadas en datos para estrategias de expansión, marketing, y servicio al cliente.
-
 ### Tabla de contenido
 
 1.  [Objetivos del Proyecto](#objetivos)
@@ -22,12 +18,13 @@ Este proyecto está orientado al análisis de reseñas de usuarios en las plataf
 4.  [Entregables](#entregables)
 5.  [Equipo de Trabajo](#team)
 6.  [Metodología de Trabajo](#method)
-7.  
-8.  [Contáctanos](#contact)
-9.  [Autores][#autores]
+7.  [Contáctanos](#contact)
+8.  [Autores](#autores)
 
 
 <h2 align='center' id='objetivos'>Objetivos del Proyecto</h2>
+
+Este proyecto está orientado al análisis de reseñas de usuarios en las plataformas Yelp y Google Maps, centrado en el sector gastronómico en Tampa, Florida. A través de técnicas avanzadas de análisis de sentimientos y Machine Learning, buscamos generar un entendimiento profundo de las opiniones de los usuarios, lo cual permitirá a nuestro cliente —un conglomerado de empresas de turismo— tomar decisiones basadas en datos para estrategias de expansión, marketing, y servicio al cliente.
 
 
 1. **Analizar las opiniones de usuarios** de Yelp y Google Maps para identificar tendencias en la percepción de locales gastronómicos.
