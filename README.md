@@ -1,7 +1,6 @@
 # <h1 align="center">**`YELP & GOOGLE MAPS - REVIEWS AND RECOMMENDATIONS`**</h1>
 
 <div align='center'><img src="src/img/2.png" height=400></div>
-<h2 align='center' id='objetivos'>Objetivos del Proyecto</h2>
 
 <h1 align='center'>Sistema de Recomendación de Locales Gastronómicos en Tampa, Florida</h1>
 
@@ -10,6 +9,8 @@
 
 <p align="center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Yelp_Logo.svg/2560px-Yelp_Logo.svg.png" height="200">
+
+<h2 align='center' id='objetivos'>Objetivos del Proyecto</h2>
 
 Este proyecto está orientado al análisis de reseñas de usuarios en las plataformas Yelp y Google Maps, centrado en el sector gastronómico en Tampa, Florida. A través de técnicas avanzadas de análisis de sentimientos y Machine Learning, buscamos generar un entendimiento profundo de las opiniones de los usuarios, lo cual permitirá a nuestro cliente —un conglomerado de empresas de turismo— tomar decisiones basadas en datos para estrategias de expansión, marketing, y servicio al cliente.
 
