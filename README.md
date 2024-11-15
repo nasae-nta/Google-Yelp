@@ -1,26 +1,29 @@
 # <h1 align="center">**`YELP & GOOGLE MAPS - REVIEWS AND RECOMMENDATIONS`**</h1>
 
+<div align='center'><img src="src/img/2.png" height=400></div>
+<h2 align='center' id='objetivos'>Objetivos del Proyecto</h2>
+
+<h1 align='center'>Sistema de Recomendación de Locales Gastronómicos en Tampa, Florida</h1>
+
 <p align="center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Google_Maps_Logo_2020.svg/512px-Google_Maps_Logo_2020.svg.png"  height="200">
 
 <p align="center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Yelp_Logo.svg/2560px-Yelp_Logo.svg.png"  height="200">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Yelp_Logo.svg/2560px-Yelp_Logo.svg.png" height="200">
 
-<h1 align='center'>Sistema de Recomendación de Locales Gastronómicos en Tampa, Florida</h1>
-
-Este proyecto está orientado al análisis de reseñas de usuarios en las plataformas Yelp y Google Maps, centrado en el sector de gastronomía en Tampa, Florida. A través de técnicas avanzadas de análisis de sentimientos y Machine Learning, buscamos generar un entendimiento profundo de las opiniones de los usuarios, lo cual permitirá a nuestro cliente —un conglomerado de empresas de turismo— tomar decisiones basadas en datos para estrategias de expansión, marketing, y servicio al cliente.
+Este proyecto está orientado al análisis de reseñas de usuarios en las plataformas Yelp y Google Maps, centrado en el sector gastronómico en Tampa, Florida. A través de técnicas avanzadas de análisis de sentimientos y Machine Learning, buscamos generar un entendimiento profundo de las opiniones de los usuarios, lo cual permitirá a nuestro cliente —un conglomerado de empresas de turismo— tomar decisiones basadas en datos para estrategias de expansión, marketing, y servicio al cliente.
 
 ### Tabla de contenido
 
 1.  [Objetivos del Proyecto](#objetivos)
-2.  [Equipo de Trabajo](#team)
-3.  [Instalación y Requisitos](#requirements)
-4.  [Estructura del Proyecto](#struct)
-5.  [Uso y Ejecución](#use)
-6.  [Datos y Fuentes](#data)
-7.  [Stack Tecnológico](#stack)
-8.  [Resultados y Conclusiones](#result)
-9.  [Contribución y Colaboración](#colab)
+2.  [KPIs](#kpis)
+3.  [Stack Tecnológico](#stack)
+4.  [Entregables](#entregables)
+5.  [Equipo de Trabajo](#team)
+6.  [Metodología de Trabajo](#method)
+7.  
+8.  [Contáctanos](#contact)
+9.  [Autores][#autores]
 
 
 <h2 align='center' id='objetivos'>Objetivos del Proyecto</h2>
@@ -35,10 +38,75 @@ Este proyecto está orientado al análisis de reseñas de usuarios en las plataf
 3. **Desarrollar un sistema de recomendación** para ayudar a los usuarios a descubrir nuevos lugares de acuerdo con sus experiencias previas.
 
 
-4. **Identificar ubicaciones óptimas para nuevos locales** en función de la demanda, puntajes y popularidad en las reseñas.
+4. **Identificar observaciones positivas y negativas concretas** en las reseñas para destacar los factores que más resaltan los mismos clientes.
+
+5. Ayudar a los locales gastronómicos a **identificar las fortalezas y las debilidades** en su negocio basado en la misma opinión de sus clientes.
 
 
-5. **Primer entrega:**.
+<h2 align='center'>Alcance</h2>
+
+Nuestro enfoque se centra en el rubro gastronómico en general (restaurantes, bares, cafeterías, etc.) en Tampa, Florida debido a su alto PBI per cápita y su alcance turístico. Sin embargo, el análisis y modelo podrían aplicarse en un futuro a otros tipos de comercios, otros estados o ampliarse a nivel internacional.
+
+Nuestro objetivo es la recopilación, procesamiento y análisis de datos en la ciudad antes mencionada, con el propósito de comprender las opiniones de los usuarios, anticipar tendencias de crecimiento o declive en el sector gastronómico, seleccionar ubicaciones estratégicas y desarrollar un sistema de recomendación personalizado para los usuarios.
+
+<h2 align='center' id='kpis'>KPIs</h2>
+
+### Tendencia de satisfacción en periodos de tiempo:
+
+Este KPI mide la satisfacción de los clientes en un mes. Los inversores necesitan saber si los clientes están contentos con la oferta general del restaurante. Si la satisfacción baja, podría indicar problemas que afecten la rentabilidad, como la pérdida de clientes o una reputación negativa. Mantener este indicador alto asegura mayores probabilidades de fidelización y recomendaciones. 
+
+**Σ Puntaje de satisfaccion de usuarios en el mes / Total de opiniones recibidas en el mes**
+
+#### Objetivo:
+
+**Lograr un aumento del 7%**
+
+### Tasa de Crecimiento de Reseñas Positivas y Negativas Trimestral:
+
+Este KPI permite evaluar las tendencias en la percepción del cliente. Un aumento de reseñas positivas sugiere que la estrategia de calidad está funcionando, mientras que un aumento en las negativas puede señalar problemas operativos. Conocer estos cambios es vital para los inversores, que pueden tomar decisiones sobre ajustes en la estrategia de negocio o marketing.
+
+Definiendo a las reseñas positivas y negativas como:
+- ✅ **Reseñas positivas:** Aquellas con un rating de 4 o 5 estrellas.
+
+**[(Total de reseñas ✅ en el trimestre - Total de reseñas ✅ el trimestre anterior) / Total de reseñas ✅ el trimestre anterior] * 100**
+
+#### Objetivo:
+
+**Lograr un aumento del 12% en las reseñas positivas**
+
+- ❌ **Reseñas negativas:** Aquellas con un rating de 1 o 2 estrellas.
+
+**[(Total de reseñas ❌ en el trimestre - Total de reseñas ❌ el trimestre anterior) / Total de reseñas ❌ el trimestre anterior] * 100**
+
+#### Objetivo:
+
+**Lograr una reduccion del 8% en las reseñas negativas**
+
+### Índice de Sentimiento Positivo Superior a 3.5 Respecto al Año Anterior:
+
+Este KPI compara el sentimiento de los usuarios en relación con el año anterior. Si el índice es alto, indica que el restaurante ha mejorado su imagen y esfuerzos por brindar una experiencia positiva. Esto tranquiliza al inversor, ya que un índice estable o en aumento puede atraer a más clientes y potenciales socios comerciales." Este kpi se define y elige en base al promedio general del índice en los restaurantes que se filtraron luego del ETL, dichos valores variaban entre 3 y 4.8 y se selecciono ese promedio.
+
+**Σ Puntaje de opiniones positivas / Total de opiniones**
+
+#### Objetivo:
+**Lograr tener un sentimiento positivo superior al 3.5 respecto al año anterior**
+
+<h2 align='center' id='entregables'>Entregables</h2>
+
+- [Diccionario de Datos y Diaframa ER](reports/documentation/DiccionarioDatos_diagramaER.pdf)
+- [Análisis Exploratorio de Datos](notebooks/ETLs%20&%20EDAs/)
+- Automatización de la carga incremental y transformación de los datos.
+- Informe sobre la [Calidad de los datos](reports/documentation/Informe%20sobre%20la%20Calidad%20de%20los%20Datos.docx.pdf)
+- Modelo de [Análisis de Sentimientos](notebooks/MachineLearning)
+- Modelo de [Recomendación](notebooks/MachineLearning/)
+- Modelo de Recomendación en la carpeta [Machine Learning](notebooks/MachineLearning/)
+- Modelo de [Procesamiento de Lenguaje Natural](notebooks/MachineLearning/)
+- Dashboard Interactivo
+- [Página web](#) del servicio
+
+<h2 align='center' id='stack'>Stack Tecnológico</h2>
+
+<div align='center'><img src="src/img/flujograma_de_proyecto.drawio.png"></div>
 
 <h2 align='center' id='team'>Equipo de Trabajo</h2>
 
@@ -62,115 +130,18 @@ Este proyecto está orientado al análisis de reseñas de usuarios en las plataf
     <b><a href='https://github.com/DataSciGina' target="blank">Agostina Fernández:</b></a> Machine Learning Engineer
 </p>
 
+<h2 align='center' id='method'>Metodología de Trabajo</h2>
 
-<h2 align='center'>Alcance</h2>
+Utilizaremos un método de trabajo ágil con enfoque en la metodología **SCRUM** apoyándonos en el software de administración de proyectos **Jira**, en donde dividiremos y asignaremos las actividades a realizar, actualizaremos nuestro **diagrama de Gantt** y mantendremos un seguimiento a todo el proyecto. Los pilares de nuestra metodología son:
 
-Nuestro enfoque se centra en el rubro gastronómico en general (restaurantes, bares, cafeterías, etc.) en Tampa, Florida debido a su alto PBI per cápita y su alcance turístico. Sin embargo, el análisis y modelo podrían aplicarse en un futuro a otros tipos de comercios, otros estados o ampliarse a nivel internacional.
+- Gestión de trabajo colaborativo a través de la puesta en común de los avances.
+- Resoluciones rápidas y efectivas, reuniones diarias y comunicación fluida.
+- Visualización del flujo de trabajo y división de roles.
+- Simplicidad en las soluciones.
 
-Nuestro objetivo es la recopilación, procesamiento y análisis de datos en la ciudad antes mencionada, con el propósito de comprender las opiniones de los usuarios, anticipar tendencias de crecimiento o declive en el sector gastronómico, seleccionar ubicaciones estratégicas y desarrollar un sistema de recomendación personalizado para los usuarios.
+<div align='center'><img src="src/img/SCRUM_Method.drawio.png"></div>
 
-
-<h2 align='center' id='requirements'>Instalación y Requisitos</h2>
-
-### Requisitos:
-
-- Python.
-- NumPy.
-- Pandas.
-- Matplotlib.
-- Scikit-Learn.
-- NLTK.
-- Power BI.
-
-### Pasos de Instalación:
-
-1. Clonar el repositorio: `git clone https://github.com/DataSciGina/Google-Yelp.git`
-2. Crear un entorno virtual: `python -m venv venv`
-3. Activar el entorno virtual:
-    - Windows: `venv\Scripts\activate`
-    - macOS/Linux: `source venv/bin/activate`
-4. Instalar las dependencias: `pip install -r requirements.txt`
-
-<h2 align='center' id='struct'>Estructura del Repositorio</h2>
-
-<b>📁 Google-Yelp</b>
-
-- 📁 **data/**
-    - **raw/:** Datos crudos descargados
-    - **processed/:** Datos procesados y listos para análisis
-- 📁 **notebooks/:** Jupyter Notebooks para exploración de datos y desarrollo del modelo
-- 📁 **src/**
-    - **data/:** Scripts de procesamiento y limpieza de datos
-    - **features/:** Scripts para generación de características para modelos
-    - **models/:** Scripts para entrenamiento y evaluación de modelos
-    - **visualization/:** Scripts para generación de gráficos y visualizaciones
-    - **utils/:** Funciones y utilidades auxiliares
-- 📁 **reports/**
-    - **figures/:** Gráficos e imágenes para informes
-    - **results/:** Resultados finales del análisis y del modelo
-- 📁 **tests/:** Tests para asegurar calidad en los scripts y funciones
-
-- **README.md:** Información general del proyecto
-- **requirements.txt:** Dependencias del proyecto
-- **.gitignore:** Archivos y carpetas a ignorar en Git
-
-
-<h2 align='center' id='use'>Uso y Ejecución</h2>
-
-### Analizar Productos Finales:
-
-1. **Visualización de datos:** En el directorio `reports/results` encontrarán los resultados finales de las visualizaciones en el archivo con extensión `.pbix`
-2. **API:** Escribir en la terminal ubicada en la carpeta del proyecto: `uvicorn main:app --reload`
-
-### Ejecución Completa del Proyecto
-
-Aquí se ingresarán los pasos de ejecución de cada etapa.
-
-<h2 align='center' id='data'>Datos y Fuentes</h2>
-
-Datos extraídos de la plataforma de reseñas **Yelp** y de **Google Maps**, para Estados Unidos. Tiene información sobre la ubicación de los comercios, su categoría, puntajes promedios, si están abiertos o no, sobre los usuarios, las reseñas que hicieron, cuántas reseñas hicieron, cuántos votos han recibido esas reseñas entre otros.
-
-<h2 align='center' id='stack'>Stack Tecnológico</h2>
-
-- **Git:** Sistema de control de versiones distribuido.
-- **GitHub:** Alojamiento del repositorio compartido.
-- **Visual Studio Code:** Software para desarrollo local del servicio.
-- **Python:** Lenguaje de programación.
-- **Librerías:**
-    - **Pandas:** Manipulación y procesamiento de datos.
-    - **Matplotlib y Seaborn:** Visualización y análisis estático de datos.
-    - **NLTK:** Procesamiento de lenguaje natural y análisis de sentimientos.
-    - **Scikit-Learn:** Entrenamiento del modelo de Machine Learning.
-- **Power BI:** Análisis interactivo de datos y desarrollo de Dashboard.
-- **MySQL:** Sistema de gestión de bases de datos relacional.
-- **SQL:** Lenguaje para interacción con base de datos.
-- **AWS:** Almacenamiento en cloud de los datos y deploy del proyecto.
-
-<h2 align='center' id='result'>Resultados y Conclusiones</h2>
-
-### KPIs
-
-
-#### Tendencia de satisfacción en periodos de tiempo:
-
-Este KPI trata de ver la evolución de la satisfacción del cliente durante periodos de tiempo.
-
-En caso de usar meses como periodo la formula seria (Satisfacción promedio del mes actual - el mes anterior % el promedio del mes anterior multiplicado x 100)
-
-El objetivo seria identificar si la calidad del servicio mejora o empeora con el tiempo y tomar medias necesarias.
-
-#### Tasa de Crecimiento de Reseñas Positivas y Negativas Trimestral:
-
-Identifica la tendencia del rubro a mejorar o empeorar.
-
-Definiendo a las reseñas positivas y negativas como:
-- **Reseñas positivas:** Aquellas con un rating de 4 o 5 estrellas.
-- **Reseñas negativas:** Aquellas con un rating de 1 o 2 estrellas.
-
-[(suma de reseñas del trimestre actual / suma de reseñas del trimestre anterior) / suma de reseñas del trimestre anterior] * 100
-
-
-<h2 align='center' id='colab'>Contribución y Colaboración</h2>
+<h2 align='center' id='contact'>Contáctanos</h2>
 
 <p align='center'>¿Te gustaría aportar algo al proyecto, darnos una opinión, colaborar con nosotros o proponernos algo?<br><b>¡Contáctanos!</b> Nos encantaría conocer tu opinión:</p>
 
